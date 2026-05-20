@@ -141,7 +141,6 @@ export default function App() {
 
     <h2>Semiformal</h2>
 
-    <p>Corbata opcional</p>
   </div>
 
 </div>
