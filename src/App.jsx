@@ -64,15 +64,40 @@ export default function App() {
       <section className="section-grid">
 
         {/* FECHA */}
-        <div className="card">
-          <p className="subtitle">Fecha</p>
+<div className="card">
+  <p className="subtitle">Fecha</p>
 
-          <h2>27 Junio 2026</h2>
+  <h2>27 Junio 2026</h2>
 
-          <p>
-            La ceremonia iniciará a las <strong>3:00 PM</strong>
-          </p>
-        </div>
+  <p>
+    La ceremonia iniciará a las <strong>3:00 PM</strong>
+  </p>
+
+  <div className="countdown">
+
+    <div>
+      <div className="countdown-number">
+        {timeLeft.dias}
+      </div>
+      <p>Días</p>
+    </div>
+
+    <div>
+      <div className="countdown-number">
+        {timeLeft.horas}
+      </div>
+      <p>Horas</p>
+    </div>
+
+    <div>
+      <div className="countdown-number">
+        {timeLeft.minutos}
+      </div>
+      <p>Minutos</p>
+    </div>
+
+  </div>
+</div>
 
         {/* LUGAR */}
         <div className="card">
@@ -101,13 +126,25 @@ export default function App() {
         </div>
 
         {/* DRESS CODE */}
-        <div className="card">
-          <p className="subtitle">Dress Code</p>
+<div className="card dress-card">
 
-          <h2>Semiformal</h2>
+  <img
+    src="/dresscode.jpg"
+    alt="Dress Code"
+    className="dress-bg"
+  />
 
-          <p>Corbata opcional</p>
-        </div>
+  <div className="dress-overlay"></div>
+
+  <div className="dress-content">
+    <p className="subtitle">Dress Code</p>
+
+    <h2>Semiformal</h2>
+
+    <p>Corbata opcional</p>
+  </div>
+
+</div>
 
         {/* QR */}
         <div className="card">
@@ -125,43 +162,7 @@ export default function App() {
           />
         </div>
 
-        {/* COUNTDOWN */}
-        <div className="card">
-          <p className="subtitle">Cuenta regresiva</p>
-
-          <div className="countdown">
-
-            <div>
-              <div className="countdown-number">
-                {timeLeft.dias}
-              </div>
-              <p>Días</p>
-            </div>
-
-            <div>
-              <div className="countdown-number">
-                {timeLeft.horas}
-              </div>
-              <p>Horas</p>
-            </div>
-
-            <div>
-              <div className="countdown-number">
-                {timeLeft.minutos}
-              </div>
-              <p>Minutos</p>
-            </div>
-
-            <div>
-              <div className="countdown-number">
-                {timeLeft.segundos}
-              </div>
-              <p>Segundos</p>
-            </div>
-
-          </div>
-        </div>
-
+       
         {/* RSVP */}
         <div className="card">
           <p className="subtitle">RSVP</p>
